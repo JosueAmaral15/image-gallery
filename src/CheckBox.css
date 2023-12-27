@@ -1,0 +1,13 @@
+.text-checkbox{
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    text-shadow: 4px 4px 2px gray;
+    font-size:large;
+    color:darkgoldenrod;
+}
+
+.checkbox[type="checkbox"]{
+    width:20px;
+    height:20px;
+    vertical-align:center;
+}

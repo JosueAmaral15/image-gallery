@@ -1,0 +1,9 @@
+.button-box{
+    width:34rem;
+    height:4rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background-color : gray;*/
+}
