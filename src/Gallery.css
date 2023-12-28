@@ -19,11 +19,19 @@
     height: 25rem;
     position: relative;
     background-color: white;
-    display: block;
+    display: flex;
     flex-direction: row;
     overflow: hidden;
     border: 2rem solid rgba(0,0,0,0.3);
     background-clip: border-box;
     /*align-items: center;*/
     /*justify-content: center;*/
+}
+
+.intern-gallery-row{
+    flex-direction: row;
+}
+
+.intern-gallery-column{
+    flex-direction: column;
 }

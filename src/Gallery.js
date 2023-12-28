@@ -1,11 +1,12 @@
 import "./Gallery.css";
 import Image from "./Image.js";
+import {forwardRef} from 'react';
 
-export default function Gallery({images}){
+const Gallery = forwardRef ((props, ref)=>{
     return (
         <section className="extern-gallery">
-            <div className="intern-gallery">{
-                images.map(
+            <div className="intern-gallery" ref={ref}>{
+                props.images.map(
                     (element, index) => {
                         return <Image key={index} properties={element} />
                     }
@@ -13,5 +14,7 @@ export default function Gallery({images}){
             }
             </div>
         </section>
-    );
-}
+    )
+});
+
+export default Gallery;
